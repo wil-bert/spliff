@@ -312,6 +312,65 @@ section {
   display: flex;
 }
 
+/* gallery */
+.background {
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.card {
+  position: relative;
+  left: 0px;
+  width: 700px;
+  height: 600px;
+  overflow: hidden;
+  background-color: var(
+      --background
+  );
+  transition: 0.4s
+      ease-in-out;
+  flex: 0.35;
+}
+
+.card img {
+  height: 400px;
+}
+
+.card:hover {
+  flex: 2;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
 /* PROFILE SECTION */
 
 #profile {
