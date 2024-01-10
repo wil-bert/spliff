@@ -1,0 +1,96 @@
+.body{
+   
+    height: 100vh;
+}
+span{
+    font-size: 40px;
+    color: white;
+}
+mat-toolbar{
+    background-color: black;
+    height: 15%;
+}
+
+/* color gridding........................ */
+:root {
+    --background: #3C343D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+.background {
+    background-color: var(--background);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.card {
+    position: relative;
+    left: 0px;
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+    background-color: var(
+        --background
+    );
+    transition: 0.4s
+        ease-in-out;
+    flex: 0.35;
+}
+
+.card img {
+    height: 500px;
+}
+
+.card:hover {
+    flex: 2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
